@@ -14,22 +14,13 @@ Public Function CompareFIO(ByVal str_1 As String, Optional ByVal str_2 As String
     canLink = True
     matchWordCount = 0
     
-    
-    ' Tekshirish
-    
-    
-    TextStrng = "The Quick Brown Fox Jumps Over The Lazy Dog"
-    
+    ' FIO so'zlarga ajratib olish
     Result_1() = Split(UCase(str_1))
     Result_2() = Split(UCase(str_2))
     
     WordCount_1 = UBound(Result_1()) + 1
     WordCount_2 = UBound(Result_2()) + 1
-    
-    Debug.Print 8
-    
-    ' MsgBox CStr(97)
-    
+  
     v = CStr(WordCount_1) & " " & CStr(WordCount_2)
     
     v = v & "-----"
